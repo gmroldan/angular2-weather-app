@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'weather-item',
     template: `
-        <article>
+        <article class="weather-element">
             <div class="col-1">
                 <h3>Cityname</h3>
                 <p class="info">CLOUDS</p>
@@ -12,7 +12,8 @@ import { Component } from '@angular/core';
                 <span class="temparature">32°</span>
             </div>
         </article>
-    `
+    `,
+    styleUrls: ['./css/weather-item.css']
 })
 export class WeatherItemComponent {
 
