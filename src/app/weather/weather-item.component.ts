@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { WeatherItem } from './weather-item';
 
@@ -18,5 +18,5 @@ import { WeatherItem } from './weather-item';
     styleUrls: ['./css/weather-item.css']
 })
 export class WeatherItemComponent {
-    weatherItem: WeatherItem;
+    @Input('item') weatherItem: WeatherItem;
 }
